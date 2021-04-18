@@ -1,6 +1,6 @@
-# music21drums
+## music21drums
 
-music21drums is a [music21](https://web.mit.edu/music21/) addon to compute drums partition. 
+music21drums is a [music21](https://web.mit.edu/music21/) addon to compute drums partition.
 
 ```
 aPart0 = drumsPart()
