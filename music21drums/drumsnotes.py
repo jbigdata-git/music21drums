@@ -7,7 +7,7 @@ from music21 import stream, clef, meter, tempo, duration, articulations
 from music21.note import Note
 
 #
-#
+# Partition init
 #
 def drumsPart():
   return stream.Part([clef.PercussionClef(), meter.TimeSignature('4/4'), tempo.MetronomeMark(number=80)])
