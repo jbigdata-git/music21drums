@@ -2,8 +2,8 @@
 
 TODO
 
-`aPart0 = drumsPart()`
-`# add a dummy Instrument to avoid musecore warn`
+`aPart0 = drumsPart()  `
+`# add a dummy Instrument to avoid musecore warn  `
 `aInstrument = instrument.Instrument()`
 `aPart0.insert(aInstrument)`
 `aMeasure0 = stream.Measure()`
