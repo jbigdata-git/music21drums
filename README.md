@@ -21,3 +21,5 @@ aPart0.append(aMeasure0)
 ```
 
 ![Screenshot](image/headline.jpg)
+
+Listen to the [tuto_drumsnote.py](/_midi/tuto_drumsnotes.mp3).
