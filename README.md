@@ -1,6 +1,6 @@
 ## music21drums
 
-music21drums is a [music21](https://web.mit.edu/music21/) add-on to compute drums partition.
+A [music21](https://web.mit.edu/music21/) add-on to compute accoustic drums partition.
 
 ```
 aPart0 = drumsPart()
