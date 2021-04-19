@@ -24,7 +24,7 @@ aPart0.metadata.composer = 'jbdata31@gmail.com'
 
 # add a dummy Instrument to avoid musecore warn
 aInstrument = instrument.Instrument()
-aInstrument.midiChannel = 6 
+# aInstrument.midiChannel = 9, 10, whatever 
 aPart0.insert(aInstrument)
 #
 aMeasure0 = stream.Measure()
