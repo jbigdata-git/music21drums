@@ -19,7 +19,7 @@ Logging.warning('Watch out!')
 
 aPart0 = drumsPart()
 aPart0.metadata = metadata.Metadata()
-aPart0.metadata.title = 'Drumsnotes tutorial'
+aPart0.metadata.title = 'music21drumsnotes'
 aPart0.metadata.composer = 'jbdata31@gmail.com'
 
 # add a dummy Instrument to avoid musecore warn
@@ -27,12 +27,13 @@ aInstrument = instrument.Instrument()
 # aInstrument.midiChannel = 9, 10, whatever 
 aPart0.insert(aInstrument)
 #
+
 aMeasure0 = stream.Measure()
 aMeasure0.append(Chord([Crash(), Kick()]))
 aMeasure0.append(HiHat())
 aMeasure0.append(Chord([HiHat(), Snare()]))
 aMeasure0.append(HiHat())
-aMeasure0.append(Chord([Crash(), Kick()]))
+aMeasure0.append(Chord([Ride(), Kick()]))
 aMeasure0.append(HiHat())
 aMeasure0.append(Chord([HiHat(), Snare()]))
 aMeasure0.append(Chord([HiHat(), Kick()]))
@@ -76,18 +77,27 @@ aMeasure0.append(Chord([Ride(duration=duration.Duration(0.25)), LowTom(duration=
 aPart0.append(aMeasure0)
 
 aMeasure0 = stream.Measure()
-aMeasure0.append(Chord([HiHat(), Kick()]))
-aMeasure0.append(OpenHiHat())
+aMeasure0.append(Chord([HiHat(articulations=[articulations.Accent()]), Kick()]))
+aNote0 = OpenHiHat()
+aNote0.articulations = [articulations.Accent()]
+aMeasure0.append(aNote0)
+#aMeasure0.append(OpenHiHat())
 aMeasure0.append(Chord([HiHat(), Snare(), Kick()]))
-aMeasure0.append(OpenHiHat())
+aNote0 = OpenHiHat()
+aNote0.articulations = [articulations.Accent()]
+aMeasure0.append(aNote0)
+#aMeasure0.append(OpenHiHat())
 aMeasure0.append(Chord([HiHat(), Kick()]))
-aMeasure0.append(OpenHiHat())
+aNote0 = OpenHiHat()
+aNote0.articulations = [articulations.Accent()]
+aMeasure0.append(aNote0)
+#aMeasure0.append(OpenHiHat())
 aMeasure0.append(Chord([HiHat(), Snare(), Kick()]))
 aMeasure0.append(Chord([HiHat(), Kick()]))
-aPart0.append(aMeasure0)
+aPart0.repeatAppend(aMeasure0, 2)
 
 aMeasure0 = stream.Measure()
-aMeasure0.append(Chord([HiHat(duration=duration.Duration(0.25)), Kick(duration=duration.Duration(0.25))]))
+aMeasure0.append(Chord([Crash(duration=duration.Duration(0.25)), Kick(duration=duration.Duration(0.25))]))
 aMeasure0.append(HiHat(duration=duration.Duration(0.25)))
 aMeasure0.append(OpenHiHat(duration=duration.Duration(0.25)))
 aMeasure0.append(HiHat(duration=duration.Duration(0.25)))
@@ -111,7 +121,10 @@ aMeasure0.append(Chord([PedalHiHat(duration=duration.Duration(0.25)), Snare(dura
 aMeasure0.append(HighTom(duration=duration.Duration(0.25)))
 aMeasure0.append(MiddleTom(duration=duration.Duration(0.25)))
 aMeasure0.append(LowTom(duration=duration.Duration(0.25)))
-aMeasure0.append(Snare())
+aNote0 = LowTom()
+aNote0.articulations = [articulations.Accent()]
+aMeasure0.append(aNote0)
+#aMeasure0.append(LowTom(articulations = [articulations.Accent()]))
 aMeasure0.append(Chord([PedalHiHat(), Snare()]))
 aMeasure0.append(Chord([Kick(), HighTom()]))
 aMeasure0.append(Chord([Kick(), MiddleTom()]))
