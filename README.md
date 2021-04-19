@@ -17,6 +17,7 @@ aMeasure0.append(Chord([HiHat(), Kick()]))
 aMeasure0.append(Chord([HiHat(), Snare()]))
 aMeasure0.append(HiHat())
 aPart0.append(aMeasure0)
+...
 ```
 
 ![Screenshot](image/headline.jpg)
