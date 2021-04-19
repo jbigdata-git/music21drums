@@ -19,4 +19,4 @@ aMeasure0.append(HiHat())
 aPart0.append(aMeasure0)
 ```
 
-![Screenshot](headline.jpg)
+![Screenshot](image/headline.jpg)
