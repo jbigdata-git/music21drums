@@ -22,4 +22,4 @@ aPart0.append(aMeasure0)
 
 ![Screenshot](image/headline.jpg)
 
-Listen to the [tuto_drumsnotes.py](/_midi/tuto_drumsnotes.mp3).
+A python [tutorial](/_midi/tuto_drumsnotes.mp3) to listen to.
