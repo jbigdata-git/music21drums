@@ -156,6 +156,7 @@ def _note2drumsnote(pNote):
   elif isinstance(pNote, Crash):
     pNote.name = 'A5'
     pNote.notehead = 'x'
+    pNote.articulations = [articulations.Accent()]
   elif isinstance(pNote, Ride):
     pNote.name = 'B5'
     pNote.notehead = 'x'
