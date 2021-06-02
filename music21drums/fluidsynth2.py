@@ -1,5 +1,5 @@
 #
-# @JBData31@gmail.com 2021-06
+# @JBData31@gmail.com 2021-05
 #
 # @see http://github.com/nwhitehead/pyfluidsynth
 # addon to link libfluidsynth.so.3 (fluidsynth 2.2.1)
