@@ -1,8 +1,8 @@
 #
 # @JBData31@gmail.com 2021-05
 #
-# @see http://github.com/nwhitehead/pyfluidsynth
 # addon to link libfluidsynth.so.3 (fluidsynth 2.2.1)
+# @see http://github.com/nwhitehead/pyfluidsynth
 #
 from ctypes import CFUNCTYPE
 from fluidsynth import find_library, cfunc, c_void_p, c_int, c_char_p

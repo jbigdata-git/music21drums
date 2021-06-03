@@ -3,6 +3,7 @@
 #
 # @install apt-get install fluidsynth libfluidsynth-dev, pip install pyFluidSynth 
 # @see http://www.fluidsynth.org/api/fluidsettings.xml
+# @see http://sites.google.com/site/soundfonts4u/
 #
 import logging as Logging
 import time

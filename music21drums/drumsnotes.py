@@ -1,6 +1,9 @@
 #
 # @JBData31@gmail.com 2021-05
 #
+# @see http://web.mit.edu/music21/
+# @see http://sites.google.com/site/soundfonts4u/
+#
 import logging as Logging
 import unittest
 import copy as Copy
